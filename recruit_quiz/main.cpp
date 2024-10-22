@@ -1,15 +1,10 @@
+#include "question.h"
 #include <iostream>
 #include <string>
 #include <vector>
 #include <random>
 using namespace std;
 
-//–â‘è•¶‚Æ“š‚¦‚ğ‚Ü‚Æ‚ß‚é\‘¢‘Ì
-struct Question
-{
-	string q; //–â‘è•¶
-	string a;	  //“š‚¦
-};
 
 //Å‘åŒö–ñ”‚ğ‹‚ß‚é
 int gcd(int a, int b)
@@ -38,7 +33,7 @@ int main()
 	//Š„‚èZ
 	x = uniform_int_distribution<>(1, 30)(rand);
 	y = uniform_int_distribution<>(1, 20)(rand);
-	questions[1].q = to_string(x * y) + "x" + to_string(y) + "‚Ì“š‚¦‚ÍH";
+	questions[1].q = to_string(x * y) + "€" + to_string(y) + "‚Ì“š‚¦‚ÍH";
 	questions[1].a = to_string(x);
 
 	//•¡G‚È®
