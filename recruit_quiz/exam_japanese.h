@@ -8,7 +8,7 @@ QuestionList CreateKanjiExam();
 QuestionList CreateIdiomExam();
 
 //“¯‚¶“Ç‚İ‚ÅˆÓ–¡‚ªˆÙ‚È‚éŒê‚Ì–â‘è‚ğì¬‚·‚é
-QuestionList CreateHomophonrExam();
+QuestionList CreateHomophoneExam();
 
 //‘Î‹`Œê‚Ì–â‘è‚ğì¬‚·‚é
 QuestionList CreateAntonymExam();
