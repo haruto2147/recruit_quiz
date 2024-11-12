@@ -96,11 +96,13 @@ QuestionList CreatePhysicsExam()
 		  
 	  }
 	  questions.push_back({
-	    "重力加速度を9.8m/s^2とする。\n初速" + to_string(v0) +
-	    "m/sで物体を鉛直に投げ上げたとき、" + to_string(t) +
-	    "秒後の物体の速度はXm/sである。\n" +
-	    "Xの値を小数点以下第1位まで求めよ(空気抵抗はないものとする)。",
-	    answer });
+	    
+		"重力加速度を9.8m/s^2とする。\n初速" + to_string(v0) +
+		"m/sで物体を鉛直に投げ上げたとき、" + to_string(t) +   
+		"秒後の物体の速度はXm/sである。\n" +  
+		"Xの値を小数点以下第1位まで求めよ(空気抵抗はないものとする)。",
+	    
+		answer });
 	} // 重力加速度
 
 	return questions;
