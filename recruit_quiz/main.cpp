@@ -142,6 +142,12 @@ int main()
 		string answer;
 		cin >> answer;
 
+		const string ascii = ConvertSjisNumberToAscii(answer);
+		// •ÏŠ·‚ª¬Œ÷‚µ‚½ê‡‚Í•¶š—ñ‚ğ’u‚«Š·‚¦‚é
+		if (!ascii.empty()) {
+			answer = ascii;
+		}
+
 		if(answer == e.a)
 		{
 			cout << "³‰ğI\n";
