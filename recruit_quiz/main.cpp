@@ -3,6 +3,8 @@
 #include "exam_english.h"
 #include "exam_science.h"
 #include "exam_geography.h"
+#include "exam_politics.h"
+#include "utility.h"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -110,7 +112,7 @@ int main()
 
 	cout << "[リクルート試験対策クイズ]\n";
 
-	cout << "教科を選んでください\n1=数学\n2=国語\n3=英語\n4=物理\n5=地理\n";
+	cout << "教科を選んでください\n1=数学\n2=国語\n3=英語\n4=物理\n5=地理\n6=政治\n";
 	int subject;
 	cin >> subject;
 	if (subject == 2) {
@@ -123,16 +125,16 @@ int main()
 		questions.insert(questions.end(), antonymExam.begin(), antonymExam.end());
 		QuestionList synonymExam = CreateSynonymExam();
 		questions.insert(questions.end(), synonymExam.begin(), synonymExam.end());
-	}
-	else if (subject == 3) {
+	}else if (subject == 3) {
 		questions = CreateEnglishWordExam();
 		QuestionList phraseExam = CreateEnglishPhraseExam();
 		questions.insert(questions.end(), phraseExam.begin(), phraseExam.end());
 	}else if (subject == 4) {
 		questions = CreatePhysicsExam();
-	}
-	else if (subject == 5) {
+	}else if (subject == 5) {
 		questions = CreatePrefecturesExam();
+	}else if (subject == 6) {
+		questions = CreatePoliticsExam();
 	}
 
 	for (const auto& e : questions) {
