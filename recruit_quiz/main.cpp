@@ -142,6 +142,15 @@ int main()
 		string answer;
 		cin >> answer;
 
+		
+		// “ü—Í‚³‚ê‚½“š‚¦‚ğSJIS‚©‚çASCII‚É•ÏŠ·‚·‚é
+		const string ascii = ConvertSjisNumberToAscii(answer);
+		// •ÏŠ·‚ª¬Œ÷‚µ‚½ê‡‚ÍASCII•¶š—ñ‚É’u‚«Š·‚¦‚é
+		if (!ascii.empty()) {
+		answer = ascii;
+		
+		}
+
 		const string ascii = ConvertSjisNumberToAscii(answer);
 		// •ÏŠ·‚ª¬Œ÷‚µ‚½ê‡‚Í•¶š—ñ‚ğ’u‚«Š·‚¦‚é
 		if (!ascii.empty()) {
